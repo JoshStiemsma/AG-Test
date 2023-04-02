@@ -286,25 +286,22 @@ public class GameManager : MonoBehaviour
     IEnumerator CountDownRoutine(Action OnFinish)
     {
         Debug.Log("Start routine B ");
-        float duration = 3;
+        float duration = 4;
         float time = 0;
         countdownText.gameObject.SetActive(true);
         while (time < duration-1)
         {
 
-            time += 0.01f;
+            time += 1;
             countdownText.text = (duration - time).ToString("00");
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(1);
         }
 
 
 
         countdownText.text = "Go!";
-        while (time < duration+1)
-        {
-            time += 0.01f;
-            yield return new WaitForSeconds(0.01f);
-        }
+         yield return new WaitForSeconds(1);
+        
        // countdownText.gameObject.SetActive(false);
         OnFinish.Invoke();
     }

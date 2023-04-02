@@ -46,10 +46,13 @@ public class SceneObject : MonoBehaviour
     bool isVisible = false;
 
     private float FullSwipeSpeed = .5f;
-
-    void Start()
+    private void Awake()
     {
         mainSpriteMaterial = imageSprite.material;
+
+    }
+    void Start()
+    {
         mainSpriteMaterial.SetFloat("_SwipeAmount", 0);
 
         if (!isPlayer)
@@ -57,15 +60,6 @@ public class SceneObject : MonoBehaviour
             Setup(Random.Range(3, 10), Color.white);
         }
         interactionHandler.OnClick += Handleclick;
-    }
-
-    private void Update()
-    {
-
-
-
-
-
     }
 
     public void Setup(int _pointCount, Color clr)
