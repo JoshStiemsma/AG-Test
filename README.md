@@ -1,6 +1,8 @@
 # AG-Test
 
-Features
+# Features
+
+**Usage Directions**
   - Double click to change color
   - Left UI buttons navigate object type
   - Right UI buttons change texture maked onto object
@@ -9,19 +11,24 @@ Features
   - Simple animtions as well as more complex shader animations and effects
   
   
+  using 
+  - Unity Build 2021.3.6f1
+  - TextMeshPro
+  - Unity UI
+ 
+
+**Release**
+
   
-  Pass APK to android Device 
-  - or
-  Run exe on computer
+
+[EXE, APK and Source Code](https://github.com/JoshStiemsma/AG-Test/releases/tag/v0.1.0)
+
+Extract .EXE from zip and run on pc or send APK to device.
+
+Otherwise build from the Unity project in either Windows or Android, iOs probably works just fine too.
 
 
-
-
-
-
-
-
-Directions
+# Directions
 
 Take Home Code Challenge
 Code Challenge
